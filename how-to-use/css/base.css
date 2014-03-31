@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+img, video, canvas {
+  max-width: 100%;
+}
+
+/**** Plaid Styling ****/
+
+body { background-color: #eee; }
+
+/**** Layout ****/
+
+body > * {
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  width: 100%;
+}

@@ -109,9 +109,14 @@ a {
   letter-spacing: 0.06em;
 }
 
-.app-store {
+.links {
   float: right;
   padding-top: 0.3em;
+  width: 140px;
+}
+
+.links a + a img {
+  margin-top: 1.5em;
 }
 
 @media (max-width: 950px) {
@@ -119,8 +124,17 @@ a {
     width: 100%;
   }
   
-  .app-store {
-    float: none;
-    padding-top: 1em;
+  .links {
+    float: left;
+    padding: 1em 0;
+    width: 100%;
+  }
+  
+  .links a + a {
+    float: right;
+  }
+  
+  .links a + a img {
+    margin-top: 0;
   }
 }

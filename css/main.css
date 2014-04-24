@@ -10,10 +10,19 @@ body, html {
 
 body { background-color: #eee; }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, .blog-link {
   font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", Helvetica, sans-serif;
   font-weight: 200;
   color: #444;
+}
+
+.blog-link {
+  color: #fe8067;
+  text-decoration: none;
+}
+
+.blog-link:hover {
+  text-decoration: underline;
 }
 
 h1 {

@@ -119,6 +119,40 @@ a {
   margin-top: 1.5em;
 }
 
+.blog {
+  background-color: #fefefe;
+  clear: both;
+  padding: 80px 20px 60px 20px;
+  border-top: 1px solid #bbb;
+}
+
+.blog > * {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.blog h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog p {
+  padding-top: 20px;
+  font-size: 120%;
+}
+
+.contact {
+  background-color: #fefefe;
+  padding: 10px 0 40px 0;
+}
+
+.contact > * {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 7px;
+}
+
 @media (max-width: 950px) {
   .info article {
     width: 100%;
@@ -136,5 +170,9 @@ a {
   
   .links a + a img {
     margin-top: 0;
+  }
+  
+  .blog > * {
+    width: 85%;
   }
 }

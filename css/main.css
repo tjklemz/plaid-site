@@ -18,6 +18,11 @@ h1, h2, h3, h4, .blog-link {
 
 .blog-link {
   color: #fe8067;
+}
+
+.blog-link:link,
+.blog-link:visited,
+.blog-link:active {
   text-decoration: none;
 }
 
@@ -112,6 +117,19 @@ a {
   padding: 1em;
 }
 
+.info:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+ 
+.info {
+  display: inline-block;
+}
+
 .info article {
   width: 80%;
   float: left;
@@ -129,10 +147,32 @@ a {
   margin-top: 1.5em;
 }
 
+footer {
+  background-color: #fefefe;
+  padding: 10px 0 40px 0;
+}
+
+footer > * {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 7px;
+}
+
+article.blog {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+article.blog p {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
 .blog {
   background-color: #fefefe;
   clear: both;
-  padding: 80px 20px 60px 20px;
+  padding: 50px 20px 60px 20px;
   border-top: 1px solid #bbb;
 }
 
@@ -151,16 +191,26 @@ a {
   font-size: 120%;
 }
 
-.contact {
-  background-color: #fefefe;
-  padding: 10px 0 40px 0;
+.blog footer {
+  margin-top: 25px;
 }
 
-.contact > * {
-  text-align: center;
-  width: 80%;
-  margin: 0 auto;
-  padding-bottom: 7px;
+.closed {
+  height: 100px;
+  overflow: hidden;
+}
+
+.closed p {
+  opacity: 0;
+}
+
+.closed {
+  padding-bottom: 10px;
+}
+
+.contact {
+  border-top: 1px solid #bbb;
+  padding-top: 40px;
 }
 
 @media (max-width: 950px) {

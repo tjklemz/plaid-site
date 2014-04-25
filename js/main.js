@@ -119,6 +119,8 @@ function addClass(ele, cls) {
       for (i = 0, len = posts.length; i < len; ++i) {
         if (hasClass(posts[i], 'closed')) {
           closePost(posts[i]);
+        } else {
+          openPost(posts[i]);
         }
       }
     }

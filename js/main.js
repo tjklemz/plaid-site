@@ -100,10 +100,10 @@ function addClass(ele, cls) {
       var p = null;
       
       if (w.location.hash && (p = b.querySelector(w.location.hash))) openPost(p);
-      else {
-        var width = d.documentElement ? d.documentElement.clientWidth : 0;
-        if (width > 800) openPost(posts[0]);
-      }
+      // else {
+      //   var width = d.documentElement ? d.documentElement.clientWidth : 0;
+      //   if (width > 800) openPost(posts[0]);
+      // }
       
       w.addEventListener('resize', react, true);
     }, true);

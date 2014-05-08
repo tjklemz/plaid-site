@@ -37,7 +37,7 @@ function addClass(ele, cls) {
   w.addEventListener("load", blast, true);
   w.addEventListener("load", function() {
     var v = d.getElementsByClassName('video')[0];
-    v.innerHTML = '<iframe src="//player.vimeo.com/video/94218298" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/94218298">Introducing Plaid for Responsive Web Layouts</a> from <a href="http://vimeo.com/user27734894">Plaid RWD</a> on <a href="https://vimeo.com">Vimeo</a>.</p>';
+    v.innerHTML = '<iframe src="//player.vimeo.com/video/94218298?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/94218298">Introducing Plaid for Responsive Web Layouts</a> from <a href="http://vimeo.com/user27734894">Plaid RWD</a> on <a href="https://vimeo.com">Vimeo</a>.</p>';
   });
   
   (function() {
